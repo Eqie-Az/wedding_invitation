@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Muhammad Wiranto & Aulia Fairouz Zahwa — Wedding Invitation</title>
+<meta name="description" content="Undangan pernikahan digital Muhammad Wiranto & Aulia Fairouz Zahwa. Resepsi 19 September 2026, pukul 09.00 - 18.00 WIB.">
+
+<meta property="og:title" content="Muhammad Wiranto & Aulia Fairouz Zahwa — Wedding Invitation">
+<meta property="og:description" content="Kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami, 19 September 2026.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/couple.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&family=Parisienne&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+<div class="floral-top" aria-hidden="true"></div>
+<div class="floral-bottom-left" aria-hidden="true"></div>
+
+<!-- ============ OPENING GATE ============ -->
+<div id="gate" class="gate">
+  <div class="gate__decor" aria-hidden="true">
+    <span class="gate__frame"></span>
+    <span class="gate__corner gate__corner--tl"></span>
+    <span class="gate__corner gate__corner--br"></span>
+    <span class="gate__floral gate__floral--top"></span>
+    <span class="gate__floral gate__floral--bottom-left"></span>
+  </div>
+  <div class="gate__ornament" aria-hidden="true">❧</div>
+  <p class="gate__eyebrow">The Wedding Of</p>
+  <h1 class="gate__names">Wiranto <span>&amp;</span> Zahwa</h1>
+  <span class="gate__divider" aria-hidden="true"></span>
+  <button type="button" id="openInvitation" class="btn btn--gold">Buka Undangan</button>
+</div>
+
+<!-- ============ FLOATING NAV ============ -->
+<nav class="floatnav" aria-label="Navigasi utama">
+  <a href="#home" class="floatnav__link" data-nav>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10v9a1 1 0 0 0 1 1H10v-5.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20h3.5a1 1 0 0 0 1-1v-9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="#mempelai" class="floatnav__link" data-nav>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="15.5" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 19c.6-3 2.6-5 5.5-5s4.9 2 5.5 5M10 19c.6-3 2.6-5 5.5-5s4.9 2 5.5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Mempelai</span>
+  </a>
+  <a href="#tanggal" class="floatnav__link" data-nav>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 9.5h16M8 3.5v3M16 3.5v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Tanggal</span>
+  </a>
+  <a href="#lokasi" class="floatnav__link" data-nav>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <span>Lokasi</span>
+  </a>
+</nav>
+
+<!-- ============ BACKSOUND ============ -->
+<!-- Ganti src di bawah dengan file musik pilihan Anda, taruh di assets/audio/backsound.mp3 -->
+<audio id="bgAudio" loop preload="none">
+  <source src="assets/audio/backsound.wav" type="audio/wav">
+
+</audio>
+<button type="button" id="musicToggle" class="music-toggle" aria-pressed="false" aria-label="Putar musik latar">
+  <svg class="music-toggle__icon music-toggle__icon--note" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="17.5" cy="16" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  </svg>
+  <svg class="music-toggle__icon music-toggle__icon--mute" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="17.5" cy="16" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<main id="content" class="content" hidden>
+
+  <!-- ============ HERO / COVER ============ -->
+  <section id="home" class="section hero">
+    <div class="card hero__card hero__card--illustrated">
+      <div class="hero__inner">
+        <p class="eyebrow">The Wedding Of</p>
+        <h1 class="hero__title">
+          <span class="script">Muhammad Wiranto</span>
+          <span class="hero__amp" aria-hidden="true">&amp;</span>
+          <span class="script">Aulia Fairouz Zahwa</span>
+        </h1>
+        <p class="hero__date">19 September 2026</p>
+
+        <a href="#tanggal" class="btn btn--primary" data-nav>Save The Date</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE / AYAT ============ -->
+  <section class="section quote-section">
+    <div class="card quote-card">
+      <div class="quote-card__mark" aria-hidden="true">❦</div>
+      <p class="quote-card__label">With Love</p>
+      <p class="quote-card__arabic" lang="ar" dir="rtl">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
+      </p>
+      <blockquote class="quote-card__text">
+        &ldquo;Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.&rdquo;
+      </blockquote>
+      <cite class="quote-card__source">(QS. Ar-Rum: 21)</cite>
+    </div>
+  </section>
+
+  <!-- ============ SECTION MEMPELAI ============ -->
+  <section id="mempelai" class="section couple-section">
+    <div class="card intro-card">
+      <span class="corner-ornament corner-ornament--tl" aria-hidden="true"></span>
+      <span class="corner-ornament corner-ornament--br" aria-hidden="true"></span>
+      <div class="intro-card__mark" aria-hidden="true">❋</div>
+      <p class="intro-card__salam">Assalamu'alaikum<br>Warahmatullahi Wabarakatuh</p>
+      <span class="intro-card__divider" aria-hidden="true"></span>
+      <p class="intro-text">
+        Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat
+        sekalian untuk berkenan hadir dan memberikan doa restu pada pernikahan kami.
+      </p>
+    </div>
+
+    <div class="couple-grid">
+      <article class="card person-card">
+        <div class="person-card__frame">
+          <img src="assets/images/groom.jpeg" alt="Muhammad Wiranto" class="person-card__photo" loading="lazy">
+        </div>
+        <h2 class="person-card__name script">Muhammad Wiranto</h2>
+        <p class="person-card__status">Putra dari</p>
+        <p class="person-card__parents">Bpk. Abdul Kholiq<br>&amp;<br>Almarhumah Ibu Mokminah</p>
+      </article>
+
+      <div class="couple-grid__divider" aria-hidden="true">&amp;</div>
+
+      <article class="card person-card">
+        <div class="person-card__frame">
+          <img src="assets/images/bride.jpeg" alt="Aulia Fairouz Zahwa" class="person-card__photo" loading="lazy">
+        </div>
+        <h2 class="person-card__name script">Aulia Fairouz Zahwa</h2>
+        <p class="person-card__status">Putri dari</p>
+        <p class="person-card__parents">Alm. Bpk Kurniawan<br>&amp;<br>Ibu Siti Juriyah</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SAVE THE DATE / COUNTDOWN ============ -->
+  <section id="tanggal" class="section date-section">
+    <div class="card date-card">
+      <div class="date-card__photo-frame">
+        <img src="assets/images/couple.jpeg" alt="Muhammad Wiranto dan Aulia Fairouz Zahwa" class="date-card__photo" loading="lazy">
+      </div>
+
+      <p class="eyebrow eyebrow--center">Save The Date</p>
+      <p class="date-card__date">19 September 2026</p>
+
+      <div id="countdown" class="countdown" aria-live="polite">
+        <div class="countdown__item">
+          <span class="countdown__value" id="cd-days">00</span>
+          <span class="countdown__label">Hari</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="cd-hours">00</span>
+          <span class="countdown__label">Jam</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="cd-minutes">00</span>
+          <span class="countdown__label">Menit</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="cd-seconds">00</span>
+          <span class="countdown__label">Detik</span>
+        </div>
+      </div>
+      <p id="countdown-message" class="countdown__message" hidden></p>
+    </div>
+  </section>
+
+  <!-- ============ LOKASI / RESEPSI ============ -->
+  <section id="lokasi" class="section location-section">
+    <div class="card location-card">
+      <p class="eyebrow eyebrow--center">Resepsi</p>
+      <p class="location-card__day">Sabtu, 19 September 2026</p>
+      <p class="location-card__time">Pukul 09.00 - 18.00 WIB</p>
+
+      <hr class="divider" aria-hidden="true">
+
+      <p class="location-card__label">Lokasi Acara</p>
+
+      <div id="map-embed" class="location-card__map" hidden>
+        <iframe id="map-embed-frame" src="" title="Lokasi Acara" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+
+      <p id="address-text" class="location-card__address">Alamat acara akan segera diperbarui.</p>
+
+      <a id="maps-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--disabled" aria-disabled="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        Buka Lokasi GMaps
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ UCAPAN TERIMA KASIH ============ -->
+  <footer class="section thanks-section">
+    <div class="card thanks-card">
+      <div class="quote-card__mark" aria-hidden="true">❧</div>
+      <p class="eyebrow eyebrow--center">Terima Kasih</p>
+      <p class="thanks-card__text">
+        Informasi lengkap, lokasi, dan RSVP dapat dilihat melalui undangan digital
+        yang kami kirimkan. Terima kasih atas doa dan kehadirannya.
+      </p>
+      <p class="thanks-card__names">
+        <span class="script">Muhammad Wiranto</span>
+        <span class="thanks-card__amp" aria-hidden="true">&amp;</span>
+        <span class="script">Aulia Fairouz Zahwa</span>
+      </p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

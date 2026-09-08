@@ -1,0 +1,21 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Node (jika sewaktu-waktu pakai `npx serve` atau tools lain)
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Environment / secrets (jaga-jaga, meski project ini belum pakai)
+.env
+.env.local
+
+# Logs
+*.log
